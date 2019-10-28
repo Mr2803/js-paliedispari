@@ -28,6 +28,7 @@ pd = pariDISPARI(sommaFuori)
 console.log("il risultato della somma dei numeri è :" + pd);
 
 risultato = vincitore(pariDispari,pd);
+document.getElementById("result").innerHTML= risultato;
 console.log(risultato);
 
 //BLOCCO FUNZIONI

@@ -1,3 +1,31 @@
+body{
+    background:beige;
+}
+
 img{
     width : 100%;
+}
+
+#result{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+footer{
+  background: rgba(41, 37, 41, 0.95);
+  border-radius: 10px;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+a{
+  text-decoration: none;
+  color:rgb(145, 145, 145);
+  transition : color .7s;
+}
+
+footer a:hover{
+  color:rgb(222, 108, 82);
 }
