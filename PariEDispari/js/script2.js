@@ -20,36 +20,25 @@ console.log("la somma dei numeri scelti dal pc e dall'utente è :" + sommaFuori)
 pd = pariDISPARI(sommaFuori)
 console.log("il risultato della somma dei numeri è :" + pd);
 
-risultato = parDisp(sommaFuori, pariDispari);
+risultato = vincitore(pariDispari,pd);
 console.log(risultato);
 
 //BLOCCO FUNZIONI
 
+//funzione per stabilire il numero del pc
 function numPc() {
     var numeropc = Math.floor(Math.random() * 5) + 1;
     return numeropc;
 }
 
-
+//funzione per stabilire la somma dei numeri scelti dal pc e dall'utente
 function add(num1, num2) {
     var somma = num1 + num2;
     return somma;
 
 }
 
-function parDisp(somma, pariDispari) {
-    if (somma % 2 == 0 && pariDispari == "pari") {
-        return "ha vinto il giocatore";
-    } else if (somma % 2 == 0 && pariDispari == "dispari") {
-        return "ha vinto il pc";
-    } else if (somma % 2 !== 0 && pariDispari == "dispari") {
-        return "ha vinto il giocatore";
-    } else if (somma % 2 !== 0 && pariDispari == "pari") {
-        return "ha vinto il pc";
-    }
-}
-
-
+//funzione per stabilire se la somma dei numeri scelti dal pc e dall'utente è pari o dispari
 function pariDISPARI(numcheck) {
 
     if (numcheck % 2 == 0) {
@@ -58,3 +47,14 @@ function pariDISPARI(numcheck) {
         return "dispari"
     }
 }
+
+//funzione per stabilire chi ha vinto
+function vincitore(sceltaUser, sommaParoDisp) {
+    if(sceltaUser==sommaParoDisp){
+        return "ha vinto il giocatore"
+    }else{
+        return "ha vinto il pc"
+    }
+}
+
+
