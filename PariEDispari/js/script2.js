@@ -3,11 +3,18 @@ Generiamo un numero random(sempre da 1 a 5) per il computer.
 Sommiamo i due numeri e dichiariamo chi ha vinto. */
 //@ts-check
 var sceltaPC, sommaFuori,pd, risultato;
-var hand = ["<img src='img/uno.png'>", "<img src='img/due.png'>", "<img src='img/tre.png'>", "<img src='img/quattro.png'>", "<img src='img/cinque.png'>"]
+var handUser = ["<img src='img/unouser.png'>", "<img src='img/dueuser.png'>", "<img src='img/treuser.png'>", "<img src='img/quattrouser.png'>", "<img src='img/cinqueuser.png'>"];
+var hand = ["<img src='img/uno.png'>", "<img src='img/due.png'>", "<img src='img/tre.png'>", "<img src='img/quattro.png'>", "<img src='img/cinque.png'>"];
 var pariDispari = prompt("scegli pari o dispari");
 console.log("il giocatore tra pari e dispari ha scelto: " + pariDispari);
 
 var numero = parseInt(prompt("scegli un numero da 1 a 5"));
+for (var j = 0; j <= handUser.length; j++){
+    if (j == numero) {
+        document.getElementById("testmanouser").innerHTML = handUser[j -1];
+    }
+}
+
 console.log("il numero scelto dal giocatore tra 1 e 5 è: " + numero);
 
 sceltaPC = numPc();
@@ -28,7 +35,7 @@ console.log(risultato);
 //funzione per stabilire il numero del pc
 function numPc() {
     var numeropc = Math.floor(Math.random() * 5) + 1 ;
-    for (var i =0; i< hand.length;i++){
+    for (var i =0; i<= hand.length;i++){
         if(i==numeropc){
             document.getElementById("testmano").innerHTML= hand[i - 1];
         }
