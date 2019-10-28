@@ -8,7 +8,7 @@ console.log(parolaUser.split("").reverse().join(""))//uso il comando JOIN che SE
 document.getElementById("test").innerHTML= palindromo(parolaUser);
 
 
-
+//BLOCCO FUNZIONI
 function palindromo(pal) {
     var palin = pal.split("").reverse("").join("");
     //creo una variabile d'appoggio che ho chiamato palin e dico che PALIN sarà uguale all'argomento della funzione palindromo(argomento che dopo diventerà la parola inserita dall'utente,nel mio caso) però DIVISA(SPLIT),REVERTATA(REVERSE),UNITA(JOIN)
