@@ -6,11 +6,21 @@ img{
     width : 100%;
 }
 
+.my_style-container{
+    min-height: 100vh;
+    align-content: space-around;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 #result{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
 }
+
 
 
 footer{
