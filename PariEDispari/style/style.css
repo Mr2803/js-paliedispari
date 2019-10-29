@@ -6,6 +6,10 @@ img{
     width : 100%;
 }
 
+#testmanouser img{
+  transform: scale(-1,1);
+}
+
 .my_style-container{
     min-height: 100vh;
     align-content: space-around;
