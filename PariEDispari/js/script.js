@@ -47,7 +47,3 @@ function parDisp(somma,pariDispari){
     }
 }
 
-
-
-
-/*  */
